@@ -1,7 +1,7 @@
 FROM aguamala/centos:7
 MAINTAINER "gabo" <aguamala@deobieta.com>
 
-RUN yum install -y duplicity s3cmd unzip && \
+RUN yum install -y which duplicity s3cmd unzip && \
     yum clean all
 
 ADD https://github.com/zertrin/duplicity-backup.sh/archive/stable.zip /
